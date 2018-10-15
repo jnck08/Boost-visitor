@@ -31,8 +31,6 @@ echo ' URL_Website : ';
 $jnck_url = trim(fgets(STDIN));
 echo ' Jumlah_Visitor : ';
 $total = trim(fgets(STDIN));
-echo ' Http_Refferer : ';
-$refferer = trim(fgets(STDIN));
 
 error_reporting(0);
 //--Bagian UI--//
@@ -76,7 +74,7 @@ $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $jnck_url);
 curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-curl_setopt($ch, CURLOPT_REFERER, $refferer);
+curl_setopt($ch, CURLOPT_REFERER, 'https://www.google.co.id');
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 curl_setopt($ch, CURLOPT_USERAGENT, $userAgent[array_rand($userAgent)]);
 $exec = curl_exec($ch);
@@ -100,9 +98,9 @@ for($a=0; $a<$total; $a++){
 echo curl($jnck_url)."\n";
 }
 $end = time()-$start;
-echo "$kuning \nSelesai dengan waktu ".$end." detik";
-echo "$kuning \nweb anda adalah :  $jnck_url";
-echo "$orange \nDone Gan h3h3h3";
+echo "$kuning \n Selesai dengan waktu ".$end." detik";
+echo "$kuning \n Web anda adalah :  $jnck_url";
+echo "$orange \n Done Gan h3h3h3";
 
 
 ?>
