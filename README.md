@@ -6,7 +6,7 @@ Created with ♥ by Rezha Andriyan
 Tutorial Termux : 
 1. Install php
 2. masukan perintah = git clone https://github.com/jnck08/Boost-visitor lalu enter
-3. lalu ketik = cd boost-visitor tekan enter
+3. lalu ketik = cd Boost-visitor tekan enter
 4. ketik php auto.php dan tekan enter
 5. isi setiap bagian dengan benar
 
