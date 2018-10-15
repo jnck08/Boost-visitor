@@ -15,4 +15,3 @@ URL website dan refferer harus menggunakan http://.
 jumlah harus di isi maksimal 3000 dan proxy bisa anda tambah sendiri di file proxy.txt
 pisahkan proxy dengan tanda "," (pembatas antar daftar proxy)
 Proxy harus menggunakan PORT 80
-=======================================
